@@ -208,6 +208,9 @@ window.onload = function(){
         if(pant.value == "NaN"){
             pant.value = "Error";
         }
+        else if(pant.value == "Infinity"){
+            pant.value = "Error: Dividir entre 0";
+        }
     })
     
 }

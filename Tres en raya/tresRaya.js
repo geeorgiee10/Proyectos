@@ -7,21 +7,22 @@ window.onload = function(){
     
     let numRandom = Math.floor(Math.random() *2);
 
+    let finalizar = false;
+
     reinicio.addEventListener("click", (e) =>{
         for(let celdas = 0; celdas < td.length; celdas++){
             td[celdas].innerHTML = "";
         }
+        finalizar = false;
         empezar();
     })
 
     function empezar(){
         if(numRandom == 1){
             empieza.innerHTML = "Empieza la X";
-        
         }
         else{
             empieza.innerHTML = "Empieza el O";
-         
         }
     }
     empezar();
@@ -31,6 +32,7 @@ window.onload = function(){
     function pintarCasillas(){
         for(let i = 0; i < td.length; i++){
             td[i].addEventListener("click", (e) =>{
+                if(finalizar == true){return}
                 if(e.target.innerHTML === ""){
                     if(empieza.innerHTML.includes("X")){
                         e.target.innerHTML = "X";
@@ -58,21 +60,21 @@ window.onload = function(){
             [2, 4, 6]  
         ];
 
-        
         for(let comb of combinacionesGanadoras){
             const[a, b, c] = comb;
             if(td[a].innerHTML === "X" && td[b].innerHTML === "X" && td[c].innerHTML === "X"){
                 empieza.innerHTML = "Ha ganado la X";
+                finalizar = true;
                 return;
             }
             else if(td[a].innerHTML === "O" && td[b].innerHTML === "O" && td[c].innerHTML === "O"){
                 empieza.innerHTML = "Ha ganado la O";
+                finalizar = true;
                 return;
             }
             
         }
-
-
+        
         let empatar = false;
         for(let i = 0; i < td.length; i++){
             if(td[i].innerHTML === ""){
@@ -82,12 +84,9 @@ window.onload = function(){
 
         if(!empatar){
             empieza.innerHTML = "Empate";
+            finalizar = true;
         }
-
     }
-
-    
-
 }
 
 

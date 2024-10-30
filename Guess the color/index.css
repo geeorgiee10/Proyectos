@@ -50,6 +50,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 10em;
+    text-align: center;
 }
 
 #nuevosColores:hover {
@@ -61,7 +63,7 @@ body {
     display: flex;
     gap: 2em;
     height: 100%;
-    
+    margin-right: 10em;
 }
 
 #easy, #hard {
