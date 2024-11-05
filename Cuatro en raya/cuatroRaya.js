@@ -52,21 +52,30 @@ window.onload = function(){
 
     function pintarCasillas(es, celda){
         if(finalizar == true){return} 
-        let columna = celda % numeroColumnas;
+        let celdaFinal = -1;
 
-            if(es.target.innerHTML === ""){
+        for(let i = 5; i >= 0; i--){
+            let index = i * numeroColumnas + (celda % numeroColumnas);
+            if(td[index].innerHTML === ""){
+                celdaFinal = index;
+                break;
+            }
+        }
+            if(celdaFinal !== -1){
                 if(empieza.style.backgroundColor == "lightgreen"){
-                    es.target.style.backgroundColor = "lightgreen";
-                    es.target.innerHTML = " ";
+                    td[celdaFinal].style.backgroundColor = "lightgreen";
+                    td[celdaFinal].innerHTML = " ";
                     empieza.style.backgroundColor = "red";
+                    
                 }
                 else{
-                    es.target.style.backgroundColor = "red";
-                    es.target.innerHTML = " ";
+                    td[celdaFinal].style.backgroundColor = "red";
+                    td[celdaFinal].innerHTML = " ";
                     empieza.style.backgroundColor = "lightgreen";
                 }
                 
             }
+        
     }
 
     function generarCombinacionesGanadoras(filas, columnas) {
