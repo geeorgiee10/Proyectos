@@ -55,7 +55,12 @@ window.onload = function() {
         let palabraAModificar = palabra.split("");
         for(let i = 0; i < letrasQuitar; i++){
             let posicionAleatoria = Math.floor(Math.random() * palabraAModificar.length);
+            while(palabraAModificar[posicionAleatoria] == " _ "){
+                posicionAleatoria = Math.floor(Math.random() * palabraAModificar.length);
+            }
+            
             palabraAModificar[posicionAleatoria] = " _ ";
+            
         }
 
         return palabraAModificar.join("");
