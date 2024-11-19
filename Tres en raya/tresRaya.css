@@ -49,28 +49,5 @@ h2 {
     margin-bottom: 1em;
 }
 
-@media (max-width: 600px) {
-    body {
-        height: auto; 
-        padding: 1em; 
-    }
-
-    table {
-        width: 100%;
-        height: auto; 
-        padding: 0.5em;
-    }
-
-    td {
-        font-size: 1.5em; 
-        height: auto;
-    }
-
-    h2 {
-        font-size: 1.5rem; 
-        margin-bottom: 0.5em; 
-    }
-}
-
 
 
