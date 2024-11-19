@@ -58,3 +58,40 @@ button{
     font-size: 30px;
 }
 
+
+@media (max-width: 600px) {
+    body {
+        width: 100%;
+        height: auto;
+    }
+
+    #container {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    #inputUsu label {
+        font-size: 20px; 
+    }
+
+    #palabra {
+        height: 3em; 
+        font-size: 20px;
+    }
+
+    #palabraAdivinar {
+        width: 90%;
+        font-size: 25px;
+    }
+
+    button {
+        height: 2.5em;
+        font-size: 12px;
+        margin: 1em;
+    }
+
+    #resultado {
+        font-size: 20px;
+    }
+}
+

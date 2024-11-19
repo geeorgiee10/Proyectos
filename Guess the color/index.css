@@ -105,3 +105,44 @@ body {
     transform: scale(1.05);
     background-color: #888; 
 }
+
+@media (max-width: 600px) {
+    body {
+        padding: 1em;
+    }
+
+    #encabeza h1 {
+        font-size: 1.8rem; 
+    }
+
+    #encabeza h2 {
+        font-size: 1rem; 
+    }
+
+    #nav {
+        flex-direction: column;
+        gap: 1em; 
+        height: auto;
+        padding: 10px 0; 
+    }
+
+    #nuevosColores, #easy, #hard {
+        width: 100%;
+        height: 2.5em;
+        font-size: 0.9rem;
+        margin: 0; 
+    }
+
+    #container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        padding: 10px; 
+        max-width: 100%; 
+    }
+
+    .recuadro {
+        width: 120px; 
+        height: 120px;
+    }
+}
+

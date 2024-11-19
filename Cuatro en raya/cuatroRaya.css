@@ -61,3 +61,41 @@ h2 {
     margin-top: 2em;
     margin-bottom: 0;
 }
+
+@media (max-width: 600px) {
+    body {
+        padding: 1em;
+    }
+
+    #tablero {
+        width: 90%; 
+        height: auto; 
+        padding: 0.5em; 
+    }
+
+    .casillas {
+        width: 1.5em; 
+        height: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em; 
+    }
+
+    #muestras {
+        width: 90%; 
+        padding: 0.5em; 
+    }
+
+    .muestra {
+        width: 2.5em; 
+        height: 3.5em;
+    }
+
+    #quien {
+        width: 2.5em; 
+        height: 2.5em;
+        font-size: 0.9em; 
+        margin-top: 1em;
+    }
+}

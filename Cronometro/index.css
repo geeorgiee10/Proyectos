@@ -43,3 +43,35 @@ p{
 .botones:hover{
     background-color: #775421;
 }
+
+@media (max-width: 600px) {
+    body {
+        height: auto; 
+        width: 100%;
+    }
+
+    #container {
+        padding: 1em; 
+        text-align: center;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    #reloj {
+        font-size: 2em;
+        margin: 0.5em;
+    }
+
+    #buttons {
+        flex-direction: column; 
+        gap: 1em;
+    }
+
+    .botones {
+        height: 2.5em;
+        width: 80%;
+        font-size: medium; 
+    }
+}
