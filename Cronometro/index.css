@@ -67,6 +67,7 @@ p{
     #buttons {
         flex-direction: column; 
         gap: 1em;
+        text-align: center;
     }
 
     .botones {
