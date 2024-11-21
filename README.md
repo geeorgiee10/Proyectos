@@ -53,3 +53,9 @@ En este repositorio, voy subiendo los distintos proyectos que realizo o me asign
 - **Tecnologías usadas**: JavaScript, HTML y CSS
 
 ---
+
+### 🏓 Pong
+- **Descripción**: Versión para ordenadores del juego del pong".
+- **Tecnologías usadas**: JavaScript (Usando SVG), HTML y CSS
+
+---
