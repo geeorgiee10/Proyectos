@@ -54,8 +54,15 @@ En este repositorio, voy subiendo los distintos proyectos que realizo o me asign
 
 ---
 
+
 ### 🏓 Pong
 - **Descripción**: Versión para ordenadores del juego del pong".
 - **Tecnologías usadas**: JavaScript (Usando SVG), HTML y CSS
+
+---
+
+### 🎬 Buscador Peliculas
+- **Descripción**: Buscador de peliculas y series usando AJAX para no recargar la pagina.
+- **Tecnologías usadas**: JavaScript, HTML y CSS
 
 ---
