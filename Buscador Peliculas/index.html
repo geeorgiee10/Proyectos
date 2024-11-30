@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="header">
+            <h1 id="titulo">Buscador Peliculas</h1>
+    
+            <div class="zonaBuscador">
+                <input type="text" name="buscador" id="buscador" placeholder="Introduce la Pelicula/Serie a Buscar">
+                <select name="tipo" id="tipo">
+                    <option value="movie">Películas</option>
+                    <option value="series">Series</option>
+                </select>
+                <button id="boton" class="boton">Buscar</button>
+                <button id="crearInforme" class="boton">Crear Informe</button>
+            </div>
+
+            <img src="./carga.webp" alt="Imagen de Carga" id="tiempoCarga">
+
+            <h2 id="numResultados"></h2>
+        </div>
+            <ul id="lista">
+
+            </ul>
+    </div>
+
+    <div id="vistaInforme" style="display: none;">
+        <h2>Informe de Películas</h2>
+        <ul id="listaInforme"></ul>
+        <div id="graficaRating" class="graficas"></div>
+        <div id="graficaRecaudacion" class="graficas"></div>
+        <div id="graficaVotos" class="graficas"></div>
+        <button id="btnCerrarInforme">Cerrar Informe</button>
+    </div>
+    
+</body>
+</html>

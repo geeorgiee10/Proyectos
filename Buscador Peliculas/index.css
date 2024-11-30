@@ -1,0 +1,270 @@
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0%;
+    left: 0%; 
+    z-index: 1000;
+    background-color:rgb(0, 0, 0, 0.4);
+}
+
+#titulo{
+    cursor: pointer;
+}
+
+.zonaBuscador{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    width: 100%;
+    margin-left: 3em;
+    margin-right: 3em;
+    justify-content: center;
+}
+
+#buscador{
+    width: 50%;
+    height: 3em;
+    border-radius: 20px;
+    border: 0;
+    padding-left: 1em;
+    margin-left: 1em;
+    font-size: 1em;
+    background-color: lightblue;
+}
+
+#tipo{
+    width: 20%;
+    height: 3em;
+    border-radius: 20px;
+    border: 0;
+    padding-left: 1em;
+    font-size: 1em;
+    background-color: lightblue;
+}
+
+#tiempoCarga{
+    height: 5em;
+    position: fixed; 
+    top: 50%;
+    left: 50%; 
+    z-index: 1000;
+    display: none;
+}
+
+.boton{
+    width: 20%;
+    height: auto;
+    border-radius: 20px;
+    border: 0;
+    background-color: gold;
+    font-size: 1.3em;
+    margin-right: 1em;
+}
+
+.boton:hover{
+    background-color: goldenrod;
+}
+
+#lista{
+    display: flex;
+    flex-direction: row;         
+    flex-wrap: wrap;             
+    gap: 2em;                    
+    justify-content: center;     
+    align-items: center;         
+    height: auto;                
+    padding: 1em; 
+    margin-top: 12em; 
+    background: linear-gradient(to right, #6a11cb, #2575fc, 0.5);
+
+}
+
+.posterPeliculas{
+    height: 25em;
+    width: 15em;
+    border-radius: 10px;
+    color: black;
+}
+
+.posterPeliculas:hover{
+    transform: scale(1.05);
+}
+
+
+.detalles {
+    position: fixed; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background: url(./fondo2.jpg) center/cover no-repeat;    
+    color: white;
+    padding: 20px;
+    padding-bottom: 2em;
+    border-radius: 10px;
+    z-index: 1000;
+    width: 60em;
+    max-width: 80%;
+    height: 60em;
+    max-height: 80%;
+    overflow-y: auto; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start;
+}
+
+.botonCerrar {
+    width: 3em;
+    height: 3em;
+    background-color: red;
+    border: 0;
+    border-radius:50%;
+    color: white;
+    align-self: flex-end;
+}
+
+.titulo{
+    align-self: center;
+}
+
+.botonCerrar:hover {
+    background-color: darkred;
+}
+
+.contentPeli{
+    display: flex;
+    height: 80%;
+    width: 100%;
+    gap: 3em;
+}
+
+.contentPeli img {
+    width: 45%;
+    height: auto;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+.contenedorTexto{
+    border-radius: 20px;
+    background-color: rgb(93, 93, 93);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    font-size: 1.2em;
+    justify-content: center;
+}
+
+
+#vistaInforme {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(./fondo2.jpg) center/cover no-repeat;    
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    max-width: 80%;
+    width: 90%;
+    overflow-y: auto;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+#listaInforme li {
+    margin-left: 5rem;
+}
+
+#btnCerrarInforme {
+    align-self: flex-end;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#btnCerrarInforme:hover {
+    background-color: darkred;
+}
+
+
+
+@media (max-width: 1000px) {
+    
+    .contenedorTexto {
+        font-size: 1em;
+        padding: 0.5em;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    #buscador {
+        font-size: 0.8em;
+    }
+
+    #tipo{
+        font-size: 0.8em;
+    }
+
+    .boton {
+        font-size: 0.9em;
+    }
+
+    .posterPeliculas {
+        height: 15em;
+        width: 10em;
+    }
+
+    .contentPeli{
+        flex-direction: column;
+        margin-bottom: 1em;
+        gap: 1em;
+    }
+
+    .titulo{
+        font-size: 1.2em;
+    }
+
+    .contentPeli img{
+        align-self: center;
+        width: 35%;
+    }
+
+    .contenedorTexto {
+        font-size: 0.9em;
+    }
+}
